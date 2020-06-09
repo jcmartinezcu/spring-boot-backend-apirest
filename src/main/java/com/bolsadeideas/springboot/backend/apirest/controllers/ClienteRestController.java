@@ -99,7 +99,7 @@ public class ClienteRestController {
 		
 		response.put("mensaje", "El cliente ha sido actualizado con éxito!");
 		response.put("cliente", clienteUpdate);
-		return  new ResponseEntity<Map<String,Object>>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+		return  new ResponseEntity<Map<String,Object>>(response, HttpStatus.OK);
 	}
 	
 	@DeleteMapping("/clientes/{id}")
